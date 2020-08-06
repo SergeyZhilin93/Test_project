@@ -1,0 +1,136 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 140rem;
+  margin: 0 auto;
+}
+.main {
+  padding-left: 8rem;
+}
+
+.menu-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.section-content {
+  display: flex;
+}
+.menu {
+  position: relative;
+}
+
+.menu-icon {
+  position: absolute;
+  bottom: -9rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+.menu-item__icon {
+  color: #6BC067;
+  padding: 0 1rem 3rem;
+  font-size: 1.1rem;
+}
+.menu-item__link {
+  color: #000;
+  font-size: 1.8rem;
+}
+.section-content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100rem;
+  height: 70rem;
+  margin-left: 1rem;
+  background: linear-gradient(180.33deg, rgba(0, 0, 0, 0.45) 14.06%, rgba(0, 0, 0, 0.25) 99.78%);
+}
+
+.section-content-right-links {
+  align-self: flex-end;
+  padding: 4rem;
+}
+.section-content-right-links__link {
+  color: #fff;
+  margin-right: 6rem;
+  font-size: 1.8rem;
+}
+.section-content-text {
+  width: 54rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+}
+.section-content-right__title {
+  font-size: 5.6rem;
+  font-weight: 400;
+  margin: 5rem 0 0;
+}
+
+.section-content-right__title.section-content-right__title--bold {
+  font-weight: 800;
+  font-size: 5.3rem;
+  margin: 0;
+}
+.section-content-right__description {
+  max-width: 49rem;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.section-content-right__link {
+  color: #fff;
+  margin-top: 6rem;
+}
+.section-content-right__link img {
+  margin-left: 3rem;
+}
+.about-us {
+  padding-left: 10rem;
+}
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-content__title {
+  font-weight: 400;
+  font-size: 5.6rem;
+}
+.about-us-content__title.about-us-content__title--bold {
+  font-weight: 600;
+}
+
+.about-us-content__description {
+  max-width: 50rem;
+  width: 100%;
+}
+.about-us-content__link {
+  color: #6ED669;
+}
+.about-us-content__link img {
+  margin-left: 2rem;
+}
+.about-us-numbers {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  justify-content: space-between;
+}
