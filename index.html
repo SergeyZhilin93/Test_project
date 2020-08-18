@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Усадьба Бергов</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,34 +21,38 @@
           </div>
           <div class="menu-item">
             <span class="menu-item__icon">01</span>
-            <a href="#" href="#" class="menu-item__link">О поселке</a>
+            <a href="javascript:void(0);" class="menu-item__link">О поселке</a>
           </div>
           <div class="menu-item">
             <span class="menu-item__icon">02</span>
-            <a href="#" class="menu-item__link">Историческое место</a>
+            <a href="javascript:void(0);" class="menu-item__link">Историческое место</a>
           </div>
           <div class="menu-item">
             <span class="menu-item__icon">03</span>
-            <a href="#" class="menu-item__link">Инфраструктура</a>
+            <a href="javascript:void(0);" class="menu-item__link">Инфраструктура</a>
           </div>
           <div class="menu-item">
             <span class="menu-item__icon">04</span>
-            <a href="#" class="menu-item__link">Генплан</a>
+            <a href="javascript:void(0);" class="menu-item__link">Генплан</a>
           </div>
           <div class="menu-item">
             <span class="menu-item__icon">05</span>
-            <a href="#" class="menu-item__link">Галерея</a>
+            <a href="javascript:void(0);" class="menu-item__link">Галерея</a>
           </div>
           <div class="menu-item">
             <span class="menu-item__icon">06</span>
-            <a href="#" class="menu-item__link">Партнеры</a>
+            <a href="javascript:void(0);" class="menu-item__link">Партнеры</a>
           </div>
-          <img src="./img/book_image.svg" alt="" class="menu-icon">
+          <div class="book-image">
+            <img src="./img/book_image.svg" alt="" class="book-image__icon">
+            <a class="book-image__link _bold" href="javascript:void(0);">Скачать<br />PDF буклет</a>
+          </div>
         </nav>
         <div class="section-content-right">
+          <div class="section-content-img"></div>
           <div class="section-content-right-links">
             <a href="mailto:5378082@mail.ru" class="section-content-right-links__link">5378082@mail.ru</a>
-            <a href="tel:8 (495) 747-31-10" class="section-content-right-links__link">8 (495) 747-31-10</a>
+            <a href="tel:+74957473110" class="section-content-right-links__link">8 (495) 747-31-10</a>
           </div>
           <div class="section-content-text">
             <h1 class="section-content-right__title">
@@ -62,7 +66,7 @@
               связующим
               между прошлым и будущим.
             </p>
-            <a href="#" class="section-content-right__link">
+            <a href="javascript:void(0);" class="section-content-right__link">
               Смотреть проекты
               <img src="./img/arrow_right.svg" alt="">
             </a>
@@ -70,14 +74,12 @@
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="container">
     <section class="about-us">
       <div class="about-us-content">
         <div>
           <h2 class="about-us-content__title"> О
-            <span class="about-us-content__title about-us-content__title--bold">поселке</span>
+            <span class="about-us-content__title _very-bold">поселке</span>
           </h2>
           <p class="about-us-content__description">
             Основными элементами планировки участков стали уникальные природные условия, ландшафт территории,
@@ -86,7 +88,7 @@
             части активно используется и сохраняется природный ландшафт и рельеф, что позволяет добиться уникальных
             видовых характеристик. В южной части участки примыкают к реке, вдоль которой устраивается набережная.
           </p>
-          <a href="#" class="about-us-content__link">Больше о поселке <img src="./img/arrow_right_green.svg" alt=""></a>
+          <a href="javascript:void(0);" class="about-us-content__link">Больше о поселке <img src="./img/arrow_right_green.svg" alt=""></a>
         </div>
         <img src="./img/about_us.svg" alt="" class="about-us__image">
       </div>
@@ -105,94 +107,118 @@
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="container">
     <section class="history">
       <div class="history-content">
         <img src="./img/history.png" alt="" class="history__image">
         <div class="history-content-text">
           <h1 class="history-content-text__title">
             Единство природы и истории — основа концепции коттеджного поселка
-            <p class="history-content-text__title history-content-text__title--bold">
+            <p class="history-content-text__title _very-bold">
               «Усадьба Бергов»
             </p>
           </h1>
-          <p class="history-content-text__discription">
-            Традиционная русская усадьба - богатейший пласт отечественного культурного наследия, гармоничный организм, где природа и архитектура сочетаются с поэзией загородной жизни,ее экологической целесообразностью. 
-            <p class="history-content-text__discription2">
+          <div class="history-content-text__body">
+            <p class="history-content-text__discription">
+              Традиционная русская усадьба - богатейший пласт отечественного культурного наследия, гармоничный организм, где природа и архитектура сочетаются с поэзией загородной жизни,ее экологической целесообразностью.
+            </p>
+            <p class="history-content-text__discription">
               С русской усадьбой неразрывно связаны имена многих государственных деятелей и военачальников, писателей, художников - тех, кто составлял веками славу России.
             </p>
-          </p>
-          <a href="#" class="history-content-text__link">Об истории усадьбы <img src="./img/arrow_right_green.svg" alt=""></a>
+          </div>
+          <a href="javascript:void(0);" class="history-content-text__link">Об истории усадьбы <img src="./img/arrow_right_green.svg" alt=""></a>
         </div>
       </div>
     </section>
-  </div>
 
-  <div class="container">
-    <section class="layout">
-      <div class="layout__background">
-        <img class="layout__image" src="./img/layout.svg" alt="" >
-        <div class="layout-content">
-          <img src="./img/type1.svg">
-          <div class="layout-text">
-            <h1 class="layout-text__title">
-                Вариант планировки
-                <p class="layout-text__title layout-text__title--bold">
-                  жилого дома
+    <section class="layouts swiper-container" id="layout-slider">
+      <div class="swiper-wrapper">
+        <div class="layout swiper-slide">
+          <div class="layout__background">
+            <img class="layout__image" src="./img/layout.svg" alt="">
+            <div class="layout-content">
+              <img src="./img/type1.svg">
+              <div class="layout-text">
+                <h1 class="layout-text__title">
+                  Вариант планировки
+                  <p class="layout-text__title _very-bold">
+                    жилого дома
+                  </p>
+                </h1>
+                <p class="layout-text__discription">
+                      <span class="_very-bold">
+                        Тип № 1
+                      </span>
+                  имеет 4 варианта планировки с разной площадью. В зависимости от выбранного участка возможно устройство
+                  бассейна.
                 </p>
-            </h1>
-            <p class="layout-text__discription">
-              <span class="layout-text__discription layout-text__discription--bold">
-                Тип № 1 
-              </span>  
-               имеет 4 варианта планировки с разной площадью. В зависимости от выбранного участка возможно устройство бассейна.
-            </p>
-            <div class="layout-arrows">
-              <a href="#" class="layout-arrows_left">
-                <img src="./img/arrow_left.svg">
-              </a>
-              <a href="#" class="layout-arrows_right">
-                <img src="./img/arrow_right.svg">
-              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layout swiper-slide">
+          <div class="layout__background">
+            <img class="layout__image" src="./img/layout.svg" alt="">
+            <div class="layout-content">
+              <img src="./img/type1.svg">
+              <div class="layout-text">
+                <h1 class="layout-text__title">
+                  Вариант планировки
+                  <p class="layout-text__title _very-bold">
+                    жилого дома
+                  </p>
+                </h1>
+                <p class="layout-text__discription">
+                      <span class="_very-bold">
+                        Тип № 2
+                      </span>
+                  имеет 4 варианта планировки с разной площадью. В зависимости от выбранного участка возможно устройство
+                  бассейна.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="layout-arrows">
+        <a href="javascript:void(0);" class="layout-arrows_left">
+          <img src="./img/arrow_left.svg">
+        </a>
+        <a href="javascript:void(0);" class="layout-arrows_right">
+          <img src="./img/arrow_right.svg">
+        </a>
+      </div>
     </section>
-  </div>
-  
-  <div class="container">
+    <div class="spruce">
+      <img alt="spruce" src="./img/spruce.png">
+    </div>
     <section class="options">
       <div class="options-content">
         <img class="options-image" src="./img/options-background.svg" alt="">
         <div class="options-text">
           <div class="options-text-left">
             <div class="options-text-left-top">
-              <h1 class="options-text-left-top__title--bold">
-                Вариант
-                <span class="options-text-left-top__title--bold options-text-left-top__title">
-                  №1
+              <h1 class="options-text-left-top__title">
+                <span class="_very-bold">Вариант</span>
+                <span>№1</span>
+              </h1>
+              <div class="options-text-left-top-area">
+                <p class="options-text-left-top-area__discription">
+                  Общая площадь здания (с террасой) -
+                  <span class="options-text-left-top-area__discription options-text-left-top-area__discription--bold">
+                    569,5 м2
                   </span>
-                </h1>
-                <div class="options-text-left-top-area">
-                  <p class="options-text-left-top-area__discription">
-                    Общая площадь здания (с террасой) - 
-                    <span class="options-text-left-top-area__discription options-text-left-top-area__discription--bold">
-                      569,5 м2
-                    </span>
-                  </p>
-                  <p class="options-text-left-top-area__discription">
-                    Площадь здания - 
-                    <span class="options-text-left-top-area__discription options-text-left-top-area__discription--bold">
-                      445,7 м2
-                    </span>
+                </p>
+                <p class="options-text-left-top-area__discription">
+                  Площадь здания -
+                  <span class="options-text-left-top-area__discription options-text-left-top-area__discription--bold">
+                    445,7 м2
+                  </span>
                 </p>
               </div>
               <div class="options-text-left-top-floors">
-                <a href="#" class="options-text-left-top-floors__link">Этаж 1</a>
-                <a href="#" class="options-text-left-top-floors__link">Этаж 2</a>
+                <a href="javascript:void(0);" class="options-text-left-top-floors__link _active">Этаж 1</a>
+                <a href="javascript:void(0);" class="options-text-left-top-floors__link">Этаж 2</a>
               </div>
             </div>
             <div class="options-text-left-middle">
@@ -227,144 +253,127 @@
           </div>
           <div class="options-text-right">
             <div class="options-text-right-top">
-              <a class="options-text-right-top__link" href="#">Вариант №1</a>
-              <a class="options-text-right-top__link" href="#">Вариант №2</a>
-              <a class="options-text-right-top__link" href="#">Вариант №3</a>
-              <a class="options-text-right-top__link" href="#">Вариант №4</a>
+              <a class="options-text-right-top__link _active" href="javascript:void(0);">Вариант №1</a>
+              <a class="options-text-right-top__link" href="javascript:void(0);">Вариант №2</a>
+              <a class="options-text-right-top__link" href="javascript:void(0);">Вариант №3</a>
+              <a class="options-text-right-top__link" href="javascript:void(0);">Вариант №4</a>
             </div>
-            <hr class="slider">
-            <img src="./img/options_slide.svg" alt="">
+            <div class="options-text-right__img" style="background-image: url(./img/floor-slider.png)"></div>
             <div class="options-text-right-bottom">
-              <a href="#"><img src="./img/arrow_left.svg" alt=""></a>
-              <a href="#"><img src="./img/arrow_right.svg" alt=""></a>
+              <a href="javascript:void(0);"><img src="./img/arrow_left.svg" alt=""></a>
+              <a href="javascript:void(0);"><img src="./img/arrow_right.svg" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <img class="spruce" alt="" src="./img/spruce.png">
-  </div>
-  
-  <div class="container">
+
     <section class="infrastructure">
       <div class="infrastructure-background">
         <img class="infrastructure-image" src="./img/infrastructure.png" alt="">
         <img class="tree__image" src="./img/tree.png" alt="">
         <img class=" trees__image" src="./img/trees.png" alt="">
-        <img class="pond__image" src="./img/pond.png" alt="">
+        <img class="pond__image" src="./img/sea.png" alt="">
       </div>
       <div class="infrastructure-content">
         <h1 class="infrastructure-content__title">Инфраструктура</h1>
         <div class="infrastructure-content-location">
-          <a class="infrastructure-content-location__link" href="#">Внутри</a>
-          <a class="infrastructure-content-location__link" href="#">Рядом</a>
+          <div class="infrastructure-content-location__body">
+            <a class="infrastructure-content-location__link _active" href="javascript:void(0);">Внутри</a>
+            <a class="infrastructure-content-location__link" href="javascript:void(0);">Рядом</a>
+          </div>
         </div>
-        <hr class="infrastructure-hr">
         <div class="infrastructure-content-discripton">
-          <a class="infrastructure-content-discripton-link" href="#">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
             <div class="infrastructure-content-discripton-link__info">
               <img src="./img/gas.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Газ</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="#">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
             <div class="infrastructure-content-discripton-link__info">
-              <img src="./img/light_bulb.png" alt="">
+              <img src="./img/idea.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Электричество</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="#">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
             <div class="infrastructure-content-discripton-link__info">
-              <img src="./img/water_pipes.png" alt="">
+              <img src="./img/faucet.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Водопровод</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="#">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
             <div class="infrastructure-content-discripton-link__info">
-              <img src="./img/sewerage.png" alt="">
+              <img src="./img/toilet-sign.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Канализация</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="#">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
             <div class="infrastructure-content-discripton-link__info">
-              <img src="./img/landscaping.png" alt="">
+              <img src="./img/bench.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Благоустройство</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="#">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
             <div class="infrastructure-content-discripton-link__info">
-              <img src="./img/internet.png" alt="">
+              <img src="./img/antenna.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Интернет</p>
             </div>
           </a>
         </div>
       </div>
     </section>
-  </div>
-  
-  <div class="container">
+
     <section class="speech">
       <div class="speech-content">
-        <img class="speech-background" src="./img/speech.svg" alt="">
-        <div class="speech-content-text">
-          <div class="speech-content-text-title">
-            <img class="speech-image" src="./img/s.png" alt="">
-            <img class="speech-image" src="./img/p.png" alt="">
-            <img class="speech-image" src="./img/e.png" alt="">
-            <img class="speech-image" src="./img/e.png" alt="">
-            <img class="speech-image" src="./img/c.png" alt="">
-            <img class="speech-image" src="./img/h.png" alt="">
-          </div>
-          <p class="speech-content-text__discription">
-            Разработчиком архитектурной концепции посёлка и Генеральным проектировщиком является одно из ведущих архитектурных бюро в России 
-            <span class="speech-content-text__discription speech-content__discription-text--bold">
-              SPEECH Чобан&Кузнецов,
-            </span>
-            во главе которого стоял Сергей Кузнецов, ныне Главный Архитектор г. Москвы.
-          </p>
+        <div class="speech-content-title">
+          <img src="./img/speech.svg" alt="speech">
         </div>
+        <p class="speech-content__discription">
+          Разработчиком архитектурной концепции посёлка и Генеральным проектировщиком является одно из ведущих архитектурных бюро в России
+          <span class="_very-bold">
+            SPEECH Чобан&Кузнецов,
+          </span>
+          во главе которого стоял Сергей Кузнецов, ныне Главный Архитектор г. Москвы.
+        </p>
       </div>
     </section>
-  </div>
 
-  <div class="container">
     <section class="plan">
       <div class="plan-content">
         <h1 class="plan-content__title">
-            Ген. план 
-            <span class="plan-content__title plan-content__title--bold">
+            Ген. план
+            <span class="plan-content__title _very-bold">
               поселка
             </span>
         </h1>
-        <img class="plan-content__image" src="./img/compas.svg" alt="">
+        <img class="plan-content__image" src="./img/compas.png" alt="">
       </div>
     </section>
-  </div>
 
-  <div class="container">
     <section class="directions">
       <div class="directions-content">
         <div class="directions-content-text">
           <div class="directions-content-text-top">
             <h1 class="directions-content-text__title">
               Схема
-              <span class="directions-content-text__title directions-content-text__title--bold">
+              <span class="directions-content-text__title _very-bold">
                 проезда
               </span>
             </h1>
             <p class="directions-content-text__discription">
                 Коттеджный поселок класса De Luxe «Усадьба Бергов» располагается вблизи поселка Первомайское.
-              <p>
-                Границами участка застройки служат: с севера — улица Парковая, с юга — река Десна и коттеджный поселок «Кедровое», с запада — ИЖС, с востока — ручей.
-              </p>
-              <p>
-                Подъездная дорога ведет со стороны улицы Парковая поселка Первомайское с выездом на автотрассу «Москва- Киев».
-              </p>
+            </p>
+            <p class="directions-content-text__discription">
+              Границами участка застройки служат: с севера — улица Парковая, с юга — река Десна и коттеджный поселок «Кедровое», с запада — ИЖС, с востока — ручей.
+            </p>
+            <p class="directions-content-text__discription">
+              Подъездная дорога ведет со стороны улицы Парковая поселка Первомайское с выездом на автотрассу «Москва- Киев».
             </p>
           </div>
           <div class="directions-content-text-distance">
             <img src="./img/distance.svg" alt="">
-            <p class="directions-content-text-distance__from">
+            <p class="directions-content-text-distance__from _bold">
               км от Москвы
             </p>
           </div>
@@ -372,65 +381,44 @@
         <img src="./img/directions.svg" alt="">
       </div>
     </section>
-  </div>
 
-  <div class="container">
-    <section class="slides">
-      <div class="slides-content">
-        <img src="./img/slider.png" alt="" class="slider-opacity">
-        <img src="./img/slider_1.png" alt="">
-        <img src="./img/slider_2.png" alt="">
-        <img src="./img/slider_3.png" alt="">
-        <img src="./img/slider_4.png" alt="">
-        <img src="./img/slider_5.png" alt="" class="slider-opacity">
-        <div class="slides-content-swipe">
-          <a href="#">
-            <img class="slides-content-swipe__left" src="./img/arrow_left.svg" alt="">
-          </a>
-          <a href="#">
-            <img class="slides-content-swipe__right" src="./img/arrow_right.svg" alt="">
-          </a>
-        </div>
+    <section class="slides swiper-container" id="slides-slider">
+      <div class="slides-content swiper-wrapper">
+        <img class="swiper-slide" src="./img/slider_1.png" alt="">
+        <img class="swiper-slide" src="./img/slider_2.png" alt="">
+        <img class="swiper-slide" src="./img/slider_3.png" alt="">
+        <img class="swiper-slide" src="./img/slider_4.png" alt="">
       </div>
+      <a class="slides-content-swipe__left" href="javascript:void(0);">
+        <img src="./img/arrow_left.svg" alt="">
+      </a>
+      <a class="slides-content-swipe__right" href="javascript:void(0);">
+        <img src="./img/arrow_right.svg" alt="">
+      </a>
     </section>
-  </div>
 
-  <div class="container">
     <section class="navigation">
-      <div class="navigation-content">
-        <img src="./img/map.png" alt="">
-        <img class="shadow_ellipse" src="./img/shadow_ellipse.png" alt="">
-        <div class="navigation-content-address">
-          <img src="./img/background_address.png" alt="">
-          <div class="navigation-content-address-text">
-            <img src="./img/name_company.png" alt="">
-            <p class="navigation-content-address-text__discription">
-              г. Москва, Троицкий АО,
-              <p class="navigation-content-address-text__paragraf">
-                п. Первомайское, К/П "Усадьба Бергов".
-              </p>
-            </p>
-          </div>
-        </div>
-      </div>
+      <img src="./img/bottom-map.png" alt="">
     </section>
-  </div>
 
-  <div class="container">
     <footer class="footer">
-      <img src="./img/footer_logo.png" alt="">
-      <div class="footer-links">
-        <a href="#" class="footer-links__link">О поселке</a>
-        <a href="#" class="footer-links__link">Инфраструктура</a>
-        <a href="#" class="footer-links__link">Историческая справка</a>
-        <a href="#" class="footer-links__link">Партнеры</a>
-      </div>
-      <div class="footer-contacts">
-        <a href="#" class="footer-contacts__number">8 (495) 747-31-10</a>
-        <a href="#" class="footer-contacts__mail">5378082@mail.ru</a>
+      <div class="footer-content">
+        <img src="./img/footer_logo.png" alt="">
+        <div class="footer-links _bold">
+          <a href="javascript:void(0);" class="footer-links__link">О поселке</a>
+          <a href="javascript:void(0);" class="footer-links__link">Инфраструктура</a>
+          <a href="javascript:void(0);" class="footer-links__link">Историческая справка</a>
+          <a href="javascript:void(0);" class="footer-links__link">Партнеры</a>
+        </div>
+        <div class="footer-contacts">
+          <a href="tel:+74957473110" class="footer-contacts__number">8 (495) 747-31-10</a>
+          <a href="mailto:5378082@mail.ru" class="footer-contacts__mail _bold">5378082@mail.ru</a>
+        </div>
       </div>
     </footer>
   </div>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 
 </html>
