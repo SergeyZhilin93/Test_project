@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
 </head>
 
 <body>
@@ -19,33 +20,67 @@
           <div class="menu-logo-container">
             <img src="./img/header_logo.svg" alt="" class="menu-logo">
           </div>
-          <div class="menu-item">
-            <span class="menu-item__icon">01</span>
-            <a href="javascript:void(0);" class="menu-item__link">О поселке</a>
+          <div class="menu-desktop">
+            <div class="menu-item">
+              <span class="menu-item__icon">01</span>
+              <a href="javascript:void(0);" onClick="return false;" onClick="return false;" class="menu-item__link">О поселке</a>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__icon">02</span>
+              <a href="javascript:void(0);" onClick="return false;" class="menu-item__link">Историческое место</a>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__icon">03</span>
+              <a href="javascript:void(0);" onClick="return false;" class="menu-item__link">Инфраструктура</a>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__icon">04</span>
+              <a href="javascript:void(0);" onClick="return false;" class="menu-item__link">Генплан</a>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__icon">05</span>
+              <a href="javascript:void(0);" onClick="return false;" class="menu-item__link">Галерея</a>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__icon">06</span>
+              <a href="javascript:void(0);" onClick="return false;" class="menu-item__link">Партнеры</a>
+            </div>
+            <div class="book-image">
+              <img src="./img/book_image.svg" alt="" class="book-image__icon">
+              <a class="book-image__link _bold" href="javascript:void(0);" onClick="return false;">Скачать<br/>PDF буклет</a>
+            </div>
           </div>
-          <div class="menu-item">
-            <span class="menu-item__icon">02</span>
-            <a href="javascript:void(0);" class="menu-item__link">Историческое место</a>
-          </div>
-          <div class="menu-item">
-            <span class="menu-item__icon">03</span>
-            <a href="javascript:void(0);" class="menu-item__link">Инфраструктура</a>
-          </div>
-          <div class="menu-item">
-            <span class="menu-item__icon">04</span>
-            <a href="javascript:void(0);" class="menu-item__link">Генплан</a>
-          </div>
-          <div class="menu-item">
-            <span class="menu-item__icon">05</span>
-            <a href="javascript:void(0);" class="menu-item__link">Галерея</a>
-          </div>
-          <div class="menu-item">
-            <span class="menu-item__icon">06</span>
-            <a href="javascript:void(0);" class="menu-item__link">Партнеры</a>
-          </div>
-          <div class="book-image">
-            <img src="./img/book_image.svg" alt="" class="book-image__icon">
-            <a class="book-image__link _bold" href="javascript:void(0);">Скачать<br />PDF буклет</a>
+          <div class="menu-mobile">
+            <div class="menu-logo-container">
+              <img src="./img/header_logo.svg" alt="" class="menu-logo">
+            </div>
+            <svg class="ham ham-rotate" viewBox="0 0 100 100" width="80" onclick="toggleBurger(this)">
+              <path
+                class="line top"
+                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+              <path
+                class="line middle"
+                d="m 70,50 h -40" />
+              <path
+                class="line bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+            </svg>
+            <div class="menu-mobile-body">
+              <div class="menu-mobile-body__container">
+                <div class="menu-mobile-body__links">
+                  <a class="_bold" href="javascript:void(0);" onClick="return false;">О поселке</a>
+                  <a class="_bold" href="javascript:void(0);" onClick="return false;">Историческое место</a>
+                  <a class="_bold" href="javascript:void(0);" onClick="return false;">Инфраструктура</a>
+                  <a class="_bold" href="javascript:void(0);" onClick="return false;">Генплан</a>
+                  <a class="_bold" href="javascript:void(0);" onClick="return false;">Галерея</a>
+                  <a class="_bold" href="javascript:void(0);" onClick="return false;">Партнеры</a>
+                </div>
+                <div class="menu-mobile-body__contacts">
+                  <a class="menu-mobile-body__contacts-phone" href="tel:+74957473110">8 (495) 747-31-10</a>
+                  <a class="_bold" href="mailto:5378082@mail.ru">5378082@mail.ru</a>
+                </div>
+              </div>
+            </div>
           </div>
         </nav>
         <div class="section-content-right">
@@ -66,7 +101,24 @@
               связующим
               между прошлым и будущим.
             </p>
-            <a href="javascript:void(0);" class="section-content-right__link">
+            <a href="javascript:void(0);" onClick="return false;" class="section-content-right__link">
+              Смотреть проекты
+              <img src="./img/arrow_right.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="projects-preview">
+          <div class="projects-preview__top">
+            <div class="projects-preview__gradient"></div>
+            <p class="projects-preview__title">Коттеджный поселок класса De&nbsp;luxe <span class="_very-bold">«Усадьба&nbsp;Бергов»</span></p>
+          </div>
+          <div class="projects-preview__bottom">
+            <p class="projects-preview__description">
+              Мы строим этот поселок для тех, кто выбирает жизнь загородом, жизнь в гармонии с природой — реальным
+              связующим
+              между прошлым и будущим.
+            </p>
+            <a href="#" onclick="return false" class="projects-preview__link">
               Смотреть проекты
               <img src="./img/arrow_right.svg" alt="">
             </a>
@@ -88,21 +140,23 @@
             части активно используется и сохраняется природный ландшафт и рельеф, что позволяет добиться уникальных
             видовых характеристик. В южной части участки примыкают к реке, вдоль которой устраивается набережная.
           </p>
-          <a href="javascript:void(0);" class="about-us-content__link">Больше о поселке <img src="./img/arrow_right_green.svg" alt=""></a>
+          <a href="javascript:void(0);" onClick="return false;" class="about-us-content__link">Больше о поселке <img src="./img/arrow_right_green.svg" alt=""></a>
         </div>
         <img src="./img/about_us.svg" alt="" class="about-us__image">
       </div>
       <div class="about-us-numbers">
         <div class="about-us-numbers__block">
-          <p class="about-us-numbers__text">Площадь земельного участка</p>
+          <p class="about-us-numbers__text _bold">Площадь земельного участка</p>
           <img src="./img/area.svg" alt="" class="about-us-numbers__image">
+          <span class="about-us-numbers__size _very-bold">m<sup>2</sup></span>
         </div>
         <div class="about-us-numbers__block">
-          <p class="about-us-numbers__text">Общая застройка</p>
+          <p class="about-us-numbers__text _bold">Общая застройка</p>
           <img src="./img/total.svg" alt="" class="about-us-numbers__image">
+          <span class="about-us-numbers__size _very-bold">m<sup>2</sup></span>
         </div>
         <div class="about-us-numbers__block">
-          <p class="about-us-numbers__text">Количество коттеджей</p>
+          <p class="about-us-numbers__text _bold">Количество коттеджей</p>
           <img src="./img/amount.svg" alt="" class="about-us-numbers__image">
         </div>
       </div>
@@ -112,12 +166,12 @@
       <div class="history-content">
         <img src="./img/history.png" alt="" class="history__image">
         <div class="history-content-text">
-          <h1 class="history-content-text__title">
+          <h2 class="history-content-text__title">
             Единство природы и истории — основа концепции коттеджного поселка
             <p class="history-content-text__title _very-bold">
               «Усадьба Бергов»
             </p>
-          </h1>
+          </h2>
           <div class="history-content-text__body">
             <p class="history-content-text__discription">
               Традиционная русская усадьба - богатейший пласт отечественного культурного наследия, гармоничный организм, где природа и архитектура сочетаются с поэзией загородной жизни,ее экологической целесообразностью.
@@ -126,7 +180,7 @@
               С русской усадьбой неразрывно связаны имена многих государственных деятелей и военачальников, писателей, художников - тех, кто составлял веками славу России.
             </p>
           </div>
-          <a href="javascript:void(0);" class="history-content-text__link">Об истории усадьбы <img src="./img/arrow_right_green.svg" alt=""></a>
+          <a href="javascript:void(0);" onClick="return false;" class="history-content-text__link">Об истории усадьбы <img src="./img/arrow_right_green.svg" alt=""></a>
         </div>
       </div>
     </section>
@@ -134,17 +188,17 @@
     <section class="layouts swiper-container" id="layout-slider">
       <div class="swiper-wrapper">
         <div class="layout swiper-slide">
-          <div class="layout__background">
-            <img class="layout__image" src="./img/layout.svg" alt="">
+          <div class="layout__background" style="background-image: url(./img/layout.svg);">
+            <div class="layouts-gradient"></div>
             <div class="layout-content">
-              <img src="./img/type1.svg">
+              <img class="layout-content__right-img" src="./img/type1.svg">
               <div class="layout-text">
-                <h1 class="layout-text__title">
-                  Вариант планировки
+                <h2 class="layout-text__title">
+                  Вариант&nbsp;планировки
                   <p class="layout-text__title _very-bold">
                     жилого дома
                   </p>
-                </h1>
+                </h2>
                 <p class="layout-text__discription">
                       <span class="_very-bold">
                         Тип № 1
@@ -157,17 +211,17 @@
           </div>
         </div>
         <div class="layout swiper-slide">
-          <div class="layout__background">
-            <img class="layout__image" src="./img/layout.svg" alt="">
+          <div class="layout__background" style="background-image: url(./img/layout.svg);">
+            <div class="layouts-gradient"></div>
             <div class="layout-content">
-              <img src="./img/type1.svg">
+              <img class="layout-content__right-img" src="./img/type1.svg">
               <div class="layout-text">
-                <h1 class="layout-text__title">
-                  Вариант планировки
+                <h2 class="layout-text__title">
+                  Вариант&nbsp;планировки
                   <p class="layout-text__title _very-bold">
                     жилого дома
                   </p>
-                </h1>
+                </h2>
                 <p class="layout-text__discription">
                       <span class="_very-bold">
                         Тип № 2
@@ -181,10 +235,10 @@
         </div>
       </div>
       <div class="layout-arrows">
-        <a href="javascript:void(0);" class="layout-arrows_left">
+        <a href="javascript:void(0);" onClick="return false;" class="layout-arrows_left">
           <img src="./img/arrow_left.svg">
         </a>
-        <a href="javascript:void(0);" class="layout-arrows_right">
+        <a href="javascript:void(0);" onClick="return false;" class="layout-arrows_right">
           <img src="./img/arrow_right.svg">
         </a>
       </div>
@@ -198,10 +252,10 @@
         <div class="options-text">
           <div class="options-text-left">
             <div class="options-text-left-top">
-              <h1 class="options-text-left-top__title">
+              <h2 class="options-text-left-top__title">
                 <span class="_very-bold">Вариант</span>
                 <span>№1</span>
-              </h1>
+              </h2>
               <div class="options-text-left-top-area">
                 <p class="options-text-left-top-area__discription">
                   Общая площадь здания (с террасой) -
@@ -217,8 +271,8 @@
                 </p>
               </div>
               <div class="options-text-left-top-floors">
-                <a href="javascript:void(0);" class="options-text-left-top-floors__link _active">Этаж 1</a>
-                <a href="javascript:void(0);" class="options-text-left-top-floors__link">Этаж 2</a>
+                <a href="javascript:void(0);" onClick="return false;" class="options-text-left-top-floors__link _active">Этаж 1</a>
+                <a href="javascript:void(0);" onClick="return false;" class="options-text-left-top-floors__link">Этаж 2</a>
               </div>
             </div>
             <div class="options-text-left-middle">
@@ -253,15 +307,15 @@
           </div>
           <div class="options-text-right">
             <div class="options-text-right-top">
-              <a class="options-text-right-top__link _active" href="javascript:void(0);">Вариант №1</a>
-              <a class="options-text-right-top__link" href="javascript:void(0);">Вариант №2</a>
-              <a class="options-text-right-top__link" href="javascript:void(0);">Вариант №3</a>
-              <a class="options-text-right-top__link" href="javascript:void(0);">Вариант №4</a>
+              <a class="options-text-right-top__link _active" href="javascript:void(0);" onClick="return false;">Вариант №1</a>
+              <a class="options-text-right-top__link" href="javascript:void(0);" onClick="return false;">Вариант №2</a>
+              <a class="options-text-right-top__link" href="javascript:void(0);" onClick="return false;">Вариант №3</a>
+              <a class="options-text-right-top__link" href="javascript:void(0);" onClick="return false;">Вариант №4</a>
             </div>
             <div class="options-text-right__img" style="background-image: url(./img/floor-slider.png)"></div>
             <div class="options-text-right-bottom">
-              <a href="javascript:void(0);"><img src="./img/arrow_left.svg" alt=""></a>
-              <a href="javascript:void(0);"><img src="./img/arrow_right.svg" alt=""></a>
+              <a href="javascript:void(0);" onClick="return false;"><img src="./img/arrow_left.svg" alt=""></a>
+              <a href="javascript:void(0);" onClick="return false;"><img src="./img/arrow_right.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -275,49 +329,88 @@
         <img class=" trees__image" src="./img/trees.png" alt="">
         <img class="pond__image" src="./img/sea.png" alt="">
       </div>
-      <div class="infrastructure-content">
-        <h1 class="infrastructure-content__title">Инфраструктура</h1>
+      <div class="infrastructure-content jsTabs">
+        <h2 class="infrastructure-content__title">Инфраструктура</h2>
         <div class="infrastructure-content-location">
           <div class="infrastructure-content-location__body">
-            <a class="infrastructure-content-location__link _active" href="javascript:void(0);">Внутри</a>
-            <a class="infrastructure-content-location__link" href="javascript:void(0);">Рядом</a>
+            <a class="infrastructure-content-location__link _active" data-tab="tab1" href="javascript:void(0);" onClick="return false;">Внутри</a>
+            <a class="infrastructure-content-location__link" data-tab="tab2" href="javascript:void(0);" onClick="return false;">Рядом</a>
+            <div class="infrastructure-content-location__line tab-line"></div>
           </div>
         </div>
-        <div class="infrastructure-content-discripton">
-          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
+        <div class="infrastructure-content-discripton _show tab-content tab1">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
             <div class="infrastructure-content-discripton-link__info">
               <img src="./img/gas.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Газ</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
             <div class="infrastructure-content-discripton-link__info">
               <img src="./img/idea.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Электричество</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
             <div class="infrastructure-content-discripton-link__info">
               <img src="./img/faucet.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Водопровод</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
             <div class="infrastructure-content-discripton-link__info">
               <img src="./img/toilet-sign.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Канализация</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
             <div class="infrastructure-content-discripton-link__info">
               <img src="./img/bench.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Благоустройство</p>
             </div>
           </a>
-          <a class="infrastructure-content-discripton-link" href="javascript:void(0);">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
             <div class="infrastructure-content-discripton-link__info">
               <img src="./img/antenna.svg" alt="">
               <p class="infrastructure-content-discripton-link__name">Интернет</p>
+            </div>
+          </a>
+        </div>
+        <div class="infrastructure-content-discripton _hide tab-content tab2">
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
+            <div class="infrastructure-content-discripton-link__info">
+              <img src="./img/gas.svg" alt="">
+              <p class="infrastructure-content-discripton-link__name">Газ2</p>
+            </div>
+          </a>
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
+            <div class="infrastructure-content-discripton-link__info">
+              <img src="./img/idea.svg" alt="">
+              <p class="infrastructure-content-discripton-link__name">Электричество2</p>
+            </div>
+          </a>
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
+            <div class="infrastructure-content-discripton-link__info">
+              <img src="./img/faucet.svg" alt="">
+              <p class="infrastructure-content-discripton-link__name">Водопровод2</p>
+            </div>
+          </a>
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
+            <div class="infrastructure-content-discripton-link__info">
+              <img src="./img/toilet-sign.svg" alt="">
+              <p class="infrastructure-content-discripton-link__name">Канализация2</p>
+            </div>
+          </a>
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
+            <div class="infrastructure-content-discripton-link__info">
+              <img src="./img/bench.svg" alt="">
+              <p class="infrastructure-content-discripton-link__name">Благоустройство2</p>
+            </div>
+          </a>
+          <a class="infrastructure-content-discripton-link" href="javascript:void(0);" onClick="return false;">
+            <div class="infrastructure-content-discripton-link__info">
+              <img src="./img/antenna.svg" alt="">
+              <p class="infrastructure-content-discripton-link__name">Интернет2</p>
             </div>
           </a>
         </div>
@@ -341,12 +434,12 @@
 
     <section class="plan">
       <div class="plan-content">
-        <h1 class="plan-content__title">
+        <h2 class="plan-content__title">
             Ген. план
             <span class="plan-content__title _very-bold">
               поселка
             </span>
-        </h1>
+        </h2>
         <img class="plan-content__image" src="./img/compas.png" alt="">
       </div>
     </section>
@@ -355,12 +448,12 @@
       <div class="directions-content">
         <div class="directions-content-text">
           <div class="directions-content-text-top">
-            <h1 class="directions-content-text__title">
+            <h2 class="directions-content-text__title">
               Схема
               <span class="directions-content-text__title _very-bold">
                 проезда
               </span>
-            </h1>
+            </h2>
             <p class="directions-content-text__discription">
                 Коттеджный поселок класса De Luxe «Усадьба Бергов» располагается вблизи поселка Первомайское.
             </p>
@@ -389,36 +482,37 @@
         <img class="swiper-slide" src="./img/slider_3.png" alt="">
         <img class="swiper-slide" src="./img/slider_4.png" alt="">
       </div>
-      <a class="slides-content-swipe__left" href="javascript:void(0);">
+      <a class="slides-content-swipe__left" href="javascript:void(0);" onClick="return false;">
         <img src="./img/arrow_left.svg" alt="">
       </a>
-      <a class="slides-content-swipe__right" href="javascript:void(0);">
+      <a class="slides-content-swipe__right" href="javascript:void(0);" onClick="return false;">
         <img src="./img/arrow_right.svg" alt="">
       </a>
     </section>
 
     <section class="navigation">
-      <img src="./img/bottom-map.png" alt="">
+      <div id="map"></div>
     </section>
 
     <footer class="footer">
       <div class="footer-content">
-        <img src="./img/footer_logo.png" alt="">
+        <img class="footer__logo" src="./img/footer_logo.png" alt="">
         <div class="footer-links _bold">
-          <a href="javascript:void(0);" class="footer-links__link">О поселке</a>
-          <a href="javascript:void(0);" class="footer-links__link">Инфраструктура</a>
-          <a href="javascript:void(0);" class="footer-links__link">Историческая справка</a>
-          <a href="javascript:void(0);" class="footer-links__link">Партнеры</a>
+          <a href="javascript:void(0);" onClick="return false;" class="footer-links__link _white-link">О поселке</a>
+          <a href="javascript:void(0);" onClick="return false;" class="footer-links__link _white-link">Инфраструктура</a>
+          <a href="javascript:void(0);" onClick="return false;" class="footer-links__link _white-link">Историческая справка</a>
+          <a href="javascript:void(0);" onClick="return false;" class="footer-links__link _white-link">Партнеры</a>
         </div>
         <div class="footer-contacts">
-          <a href="tel:+74957473110" class="footer-contacts__number">8 (495) 747-31-10</a>
-          <a href="mailto:5378082@mail.ru" class="footer-contacts__mail _bold">5378082@mail.ru</a>
+          <a href="tel:+74957473110" class="footer-contacts__number _white-link">8 (495) 747-31-10</a>
+          <a href="mailto:5378082@mail.ru" class="footer-contacts__mail _bold _white-link">5378082@mail.ru</a>
         </div>
       </div>
     </footer>
   </div>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=84faf73e-747f-47ef-af71-7868acc95826" type="text/javascript"></script>
 <script src="js/main.js"></script>
 
 </html>
