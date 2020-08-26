@@ -1,3 +1,4 @@
+const isMobile = document.documentElement.clientWidth <= 768;
 initBaseFontSize();
 initTabs();
 ymaps.ready(initMap);
@@ -81,17 +82,24 @@ function switchContent(obj, contentClass) {
 
 function initMap () {
   const myMap = new ymaps.Map('map', {
-    center: [55.529654, 37.164597],
-    zoom: 17
+    center: isMobile ? [55.530709, 37.167363] : [55.531035, 37.166180],
+    zoom: isMobile ? 16 : 17
   }, {
     searchControlProvider: 'yandex#search'
   });
-  const myGeoObject = new ymaps.Placemark([55.529654, 37.164597], {
-    balloonContent: 'Метка'
+
+  const placemark = new ymaps.Placemark([55.529654, 37.164597], {
+    hintContent: '',
+    balloonContent: ''
   }, {
-    iconColor: '#3b5998'
+    iconLayout: 'default#image',
+    iconImageHref: './img/pin.png',
+    iconImageSize: isMobile ? [280, 100] : [493, 184],
+    iconImageOffset: isMobile ? [20, -170] : [100, -300]
   });
-  myMap.geoObjects.add(myGeoObject);
+
+  myMap.behaviors.disable('scrollZoom');
+  myMap.geoObjects.add(placemark);
 }
 
 function initBaseFontSize() {
@@ -111,6 +119,5 @@ function toggleBurger(el) {
   const toggleElHeight = document.querySelector('.menu-mobile-body__container').offsetHeight;
 
   el.classList.toggle('active');
-  console.log(el.classList.contains('active'), toggleElHeight)
   toggleEl.style.height = el.classList.contains('active') ? toggleElHeight + 'px' : 0;
 }

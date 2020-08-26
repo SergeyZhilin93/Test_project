@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Усадьба Бергов</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -17,7 +18,7 @@
     <section class="main">
       <div class="section-content">
         <nav class="menu">
-          <div class="menu-logo-container">
+          <div class="menu-logo-container _mobile-hide">
             <img src="./img/header_logo.svg" alt="" class="menu-logo">
           </div>
           <div class="menu-desktop">
@@ -107,7 +108,7 @@
             </a>
           </div>
         </div>
-        <div class="projects-preview">
+        <div class="projects-preview _mobile-show">
           <div class="projects-preview__top">
             <div class="projects-preview__gradient"></div>
             <p class="projects-preview__title">Коттеджный поселок класса De&nbsp;luxe <span class="_very-bold">«Усадьба&nbsp;Бергов»</span></p>
@@ -147,30 +148,45 @@
       <div class="about-us-numbers">
         <div class="about-us-numbers__block">
           <p class="about-us-numbers__text _bold">Площадь земельного участка</p>
-          <img src="./img/area.svg" alt="" class="about-us-numbers__image">
-          <span class="about-us-numbers__size _very-bold">m<sup>2</sup></span>
+          <div class="about-us-numbers__image">
+            <img src="./img/area.svg" alt="">
+            <span class="about-us-numbers__size _very-bold">m<sup>2</sup></span>
+          </div>
         </div>
         <div class="about-us-numbers__block">
           <p class="about-us-numbers__text _bold">Общая застройка</p>
-          <img src="./img/total.svg" alt="" class="about-us-numbers__image">
-          <span class="about-us-numbers__size _very-bold">m<sup>2</sup></span>
+          <div class="about-us-numbers__image">
+            <img src="./img/total.svg" alt="">
+            <span class="about-us-numbers__size _very-bold">m<sup>2</sup></span>
+          </div>
         </div>
         <div class="about-us-numbers__block">
           <p class="about-us-numbers__text _bold">Количество коттеджей</p>
-          <img src="./img/amount.svg" alt="" class="about-us-numbers__image">
+          <div class="about-us-numbers__image">
+            <img src="./img/amount.svg" alt="" class="about-us-numbers__image">
+          </div>
         </div>
       </div>
     </section>
 
     <section class="history">
       <div class="history-content">
-        <img src="./img/history.png" alt="" class="history__image">
-        <div class="history-content-text">
-          <h2 class="history-content-text__title">
+        <div class="history__image">
+          <img src="./img/history.png" alt="">
+          <div class="history__image-gradient"></div>
+          <h2 class="history-content-text__title _mobile-show">
             Единство природы и истории — основа концепции коттеджного поселка
-            <p class="history-content-text__title _very-bold">
+            <span class="_very-bold">
               «Усадьба Бергов»
-            </p>
+            </span>
+          </h2>
+        </div>
+        <div class="history-content-text">
+          <h2 class="history-content-text__title _mobile-hide">
+            Единство природы и истории — основа концепции коттеджного поселка
+            <span class="_very-bold">
+              «Усадьба Бергов»
+            </span>
           </h2>
           <div class="history-content-text__body">
             <p class="history-content-text__discription">
@@ -180,7 +196,16 @@
               С русской усадьбой неразрывно связаны имена многих государственных деятелей и военачальников, писателей, художников - тех, кто составлял веками славу России.
             </p>
           </div>
-          <a href="javascript:void(0);" onClick="return false;" class="history-content-text__link">Об истории усадьбы <img src="./img/arrow_right_green.svg" alt=""></a>
+          <a href="javascript:void(0);" onclick="return false;" class="history-content-text__link">Об истории усадьбы <img src="./img/arrow_right_green.svg" alt=""></a>
+          <div class="history-content-text__mobile _mobile-show">
+            <h2>
+              Вариант планировки
+              <span class="_very-bold">
+                жилого дома
+              </span>
+            </h2>
+            <p><span class="_bold">Тип № 1</span> имеет 4 варианта планировки с разной площадью. В зависимости от выбранного участка возможно устройство бассейна.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -189,10 +214,10 @@
       <div class="swiper-wrapper">
         <div class="layout swiper-slide">
           <div class="layout__background" style="background-image: url(./img/layout.svg);">
-            <div class="layouts-gradient"></div>
+            <div class="layouts-gradient _mobile-hide"></div>
             <div class="layout-content">
               <img class="layout-content__right-img" src="./img/type1.svg">
-              <div class="layout-text">
+              <div class="layout-text _mobile-hide">
                 <h2 class="layout-text__title">
                   Вариант&nbsp;планировки
                   <p class="layout-text__title _very-bold">
@@ -209,13 +234,20 @@
               </div>
             </div>
           </div>
+          <div class="layout-options">
+            <h2 class="layout-options__title">
+              <span class="_bold">Вариант</span> №1
+            </h2>
+            <p class="layout-options__description">Общая площадь здания (с террасой) - 569,5 м2 Площадь здания - 445,7 м2</p>
+            <div class="layout-options__bg"></div>
+          </div>
         </div>
         <div class="layout swiper-slide">
           <div class="layout__background" style="background-image: url(./img/layout.svg);">
-            <div class="layouts-gradient"></div>
+            <div class="layouts-gradient _mobile-hide"></div>
             <div class="layout-content">
               <img class="layout-content__right-img" src="./img/type1.svg">
-              <div class="layout-text">
+              <div class="layout-text _mobile-hide">
                 <h2 class="layout-text__title">
                   Вариант&nbsp;планировки
                   <p class="layout-text__title _very-bold">
@@ -232,9 +264,16 @@
               </div>
             </div>
           </div>
+          <div class="layout-options">
+            <h2 class="layout-options__title">
+              <span class="_bold">Вариант</span> №2
+            </h2>
+            <p class="layout-options__description">Общая площадь здания (с террасой) - 569,5 м2 Площадь здания - 445,7 м2</p>
+            <div class="layout-options__bg"></div>
+          </div>
         </div>
       </div>
-      <div class="layout-arrows">
+      <div class="layout-arrows _mobile-hide">
         <a href="javascript:void(0);" onClick="return false;" class="layout-arrows_left">
           <img src="./img/arrow_left.svg">
         </a>
@@ -243,20 +282,20 @@
         </a>
       </div>
     </section>
-    <div class="spruce">
+    <div class="spruce _mobile-hide">
       <img alt="spruce" src="./img/spruce.png">
     </div>
     <section class="options">
       <div class="options-content">
-        <img class="options-image" src="./img/options-background.svg" alt="">
+        <img class="options-image _mobile-hide" src="./img/options-background.svg" alt="">
         <div class="options-text">
           <div class="options-text-left">
             <div class="options-text-left-top">
-              <h2 class="options-text-left-top__title">
+              <h2 class="options-text-left-top__title _mobile-hide">
                 <span class="_very-bold">Вариант</span>
                 <span>№1</span>
               </h2>
-              <div class="options-text-left-top-area">
+              <div class="options-text-left-top-area _mobile-hide">
                 <p class="options-text-left-top-area__discription">
                   Общая площадь здания (с террасой) -
                   <span class="options-text-left-top-area__discription options-text-left-top-area__discription--bold">
@@ -273,6 +312,9 @@
               <div class="options-text-left-top-floors">
                 <a href="javascript:void(0);" onClick="return false;" class="options-text-left-top-floors__link _active">Этаж 1</a>
                 <a href="javascript:void(0);" onClick="return false;" class="options-text-left-top-floors__link">Этаж 2</a>
+              </div>
+              <div class="options-text-left__img _mobile-show">
+                <img src="./img/floor-slider.png" alt="">
               </div>
             </div>
             <div class="options-text-left-middle">
@@ -305,7 +347,7 @@
               <span class="options-text-left-bottom-foot__bold">315,9 м2</span>
             </p>
           </div>
-          <div class="options-text-right">
+          <div class="options-text-right _mobile-hide">
             <div class="options-text-right-top">
               <a class="options-text-right-top__link _active" href="javascript:void(0);" onClick="return false;">Вариант №1</a>
               <a class="options-text-right-top__link" href="javascript:void(0);" onClick="return false;">Вариант №2</a>
@@ -323,7 +365,7 @@
     </section>
 
     <section class="infrastructure">
-      <div class="infrastructure-background">
+      <div class="infrastructure-background _mobile-hide">
         <img class="infrastructure-image" src="./img/infrastructure.png" alt="">
         <img class="tree__image" src="./img/tree.png" alt="">
         <img class=" trees__image" src="./img/trees.png" alt="">
@@ -433,6 +475,7 @@
     </section>
 
     <section class="plan">
+      <div class="plan__map"></div>
       <div class="plan-content">
         <h2 class="plan-content__title">
             Ген. план
@@ -488,6 +531,9 @@
       <a class="slides-content-swipe__right" href="javascript:void(0);" onClick="return false;">
         <img src="./img/arrow_right.svg" alt="">
       </a>
+      <div class="slides-more _mobile-show">
+        <a href="javascript:void(0);" onclick="return false;" class="history-content-text__link">Больше фотографий <img src="./img/arrow_right_green.svg" alt=""></a>
+      </div>
     </section>
 
     <section class="navigation">
@@ -512,7 +558,7 @@
   </div>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=84faf73e-747f-47ef-af71-7868acc95826" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=84faf73e-747f-47ef-af71-7868acc95826&scroll=false" type="text/javascript"></script>
 <script src="js/main.js"></script>
 
 </html>
